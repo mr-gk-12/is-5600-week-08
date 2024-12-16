@@ -5,6 +5,7 @@ const { list, get } = require('../products');
 const productTestHelper = require('./test-utils/productTestHelper');
 const exp = require('constants');
 const { mockModel } = require('../test-utils/db.mock');
+const { DiffieHellmanGroup } = require('crypto');
 
 jest.mock('../db', () => mockDb);
 
